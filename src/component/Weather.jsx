@@ -59,7 +59,7 @@ function Weather() {
       {loading && <p>Loading data...</p>}
       {error && <p>{error}</p>}
       {weatherData && (
-        <div>
+        <div className="weather-cards">
           <div className={style.weather_card}>
             <h3>Temperature</h3>
             <p>{weatherData.temp_c} °C</p>
