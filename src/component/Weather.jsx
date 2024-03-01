@@ -1,6 +1,6 @@
 // WeatherApp.js
 import React, { useState } from "react";
-import style from "./Weather.module.css";
+import "./Weather.css";
 
 function Weather() {
   const [city, setCity] = useState("");
@@ -47,7 +47,7 @@ function Weather() {
   };
 
   return (
-    <div className={style.container}>
+    <div className="container">
       <h1>Weather Application</h1>
       <input
         type="text"
@@ -60,19 +60,19 @@ function Weather() {
       {error && <p>{error}</p>}
       {weatherData && (
         <div className="weather-cards">
-          <div className={style.weather_card}>
+          <div className="weather-card">
             <h3>Temperature</h3>
             <p>{weatherData.temp_c} °C</p>
           </div>
-          <div className={style.weather_card}>
+          <div className="weather-card">
             <h3>Humidity</h3>
             <p>{weatherData.humidity}%</p>
           </div>
-          <div className={style.weather_card}>
+          <div className="weather-card">
             <h3>Condition</h3>
             <p>{weatherData.condition.text}</p>
           </div>
-          <div className={style.weather_card}>
+          <div className="weather-card">
             <h3>Wind Speed</h3>
             <p>{weatherData.wind_kph} km/h</p>
           </div>
