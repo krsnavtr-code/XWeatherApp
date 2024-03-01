@@ -30,7 +30,7 @@ function Weather() {
       .catch((error) => {
         setError(error.message);
         setLoading(false);
-        setWeatherData(null); // Reset weatherData if error occurs
+        setWeatherData(null);
       });
   };
 
