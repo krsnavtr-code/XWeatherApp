@@ -60,19 +60,19 @@ function Weather() {
       {error && <p>{error}</p>}
       {weatherData && (
         <div>
-          <div className={style.weatherCard}>
+          <div className={style.weather_card}>
             <h3>Temperature</h3>
             <p>{weatherData.temp_c} °C</p>
           </div>
-          <div className={style.weatherCard}>
+          <div className={style.weather_card}>
             <h3>Humidity</h3>
             <p>{weatherData.humidity}%</p>
           </div>
-          <div className={style.weatherCard}>
+          <div className={style.weather_card}>
             <h3>Condition</h3>
             <p>{weatherData.condition.text}</p>
           </div>
-          <div className={style.weatherCard}>
+          <div className={style.weather_card}>
             <h3>Wind Speed</h3>
             <p>{weatherData.wind_kph} km/h</p>
           </div>
